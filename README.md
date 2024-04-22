@@ -33,6 +33,11 @@ However, if the default file is used, the output should resulting in
 1/1 [==============================] - 1s 1s/step
 ..(((((((..(.(((((((((((..(((...((......))...))).)))))))))))))))))))...............(((((((((.((....))..)))))))))...
 ```
+or you can install `gradio` (using `pip install gradio`) and create a simple local webapp by running
+```
+python webapp.py
+```
+This will print out the clickable link (default is [127.0.0.1:7860](http://127.0.0.1:7860)) so that you can test with any RNA sequence and will return a dot-bracket secondary structure.
 
 ## Training
 
