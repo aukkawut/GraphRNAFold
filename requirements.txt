@@ -1,9 +1,8 @@
-numpy==1.19.5 
-pandas==1.2.4
-scikit-learn==1.0.1 
-scipy==1.7.3 
-networkx==2.5 
-keras==2.6.0 
-tensorflow==2.6.1
+numpy
+pandas
+scikit-learn
+scipy
+networkx
+tensorflow==2.12.0
 spektral
 arnie
