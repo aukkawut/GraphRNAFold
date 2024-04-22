@@ -34,4 +34,7 @@ However, if the default file is used, the output should resulting in
 ..(((((((..(.(((((((((((..(((...((......))...))).)))))))))))))))))))...............(((((((((.((....))..)))))))))...
 ```
 
+## Training
+
+To train the model, you need a training data. Here we only provided you with the validation set (`RNA_graph_data/VL0_data.pickle`) but you need to have the training set as denoted in the training file. The more detailed tutorial will be released.
 
