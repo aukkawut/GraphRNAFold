@@ -19,7 +19,7 @@ def GCNfold_prediction(rna_seq, GCNfold, one_type=True, threshold=0.35):
         dot_pred = pairing_idx_to_dot(map2idx(map_pred))
     return dot_pred
 
-model_path = '.model/GCNfold-V.h5'
+model_path = './model/GCNfold-V.h5'
 GCNfold = keras.models.load_model(model_path, custom_objects={"GCSConv":spektral.layers.GCSConv, 
                                                               "weighted_BCE_loss":weighted_BCE_loss, "F1_score": F1_score})
 
