@@ -3,6 +3,6 @@ pandas
 scikit-learn
 scipy
 networkx
-tensorflow==2.12.0
+tensorflow==2.13.0
 spektral
 arnie
