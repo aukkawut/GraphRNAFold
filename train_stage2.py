@@ -25,7 +25,7 @@ learning_rate = 0.001
 stage1_model_path = '/model/stage1_model.h5'  # pretrained model from stage 1
 
 save_path = './model/'
-model_name = "GCNfold-V.h5"
+model_name = "GraphRNAFold-V.h5"
 model = keras.models.load_model(stage1_model_path, custom_objects={"GCSConv":spektral.layers.GCSConv})
 embed_model = keras.Model(model.input, model.layers[10].output)
 gcnfold = gcn_mapping(embed_model, conv1D_filters=64, freeze_embed=True)
