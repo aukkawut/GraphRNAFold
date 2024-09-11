@@ -1,4 +1,4 @@
-# GCNFold
+# GraphRNAFold
 ## How to install
 
 This tutorial is for Ubuntu system. Other systems are untested (you can use WSL on Windows and Mac should have similar installation process). 
