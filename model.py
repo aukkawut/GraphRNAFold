@@ -4,7 +4,7 @@ from tensorflow.keras import backend  as K
 from tensorflow.keras import layers
 import spektral
 
-# STAGE 1's component of GCNfold (Sequential). --> predict dot-bracket notations and use them as embedding for STAGE 2
+# STAGE 1's component of GraphRNAFold (Sequential). --> predict dot-bracket notations and use them as embedding for STAGE 2
 def create_GNN(n_labels=8, hidden_dim=128, n_layers=2, activation="gelu"):
     pre_dense = layers.Conv1D(hidden_dim, 3, padding='same')
     gnn_layers = [spektral.layers.GCSConv(hidden_dim, activation=activation) for _ in range(n_layers)]
@@ -28,7 +28,7 @@ def acc(y_true, y_pred):
     mask = tf.greater(y, 0)
     return K.cast(K.equal(tf.boolean_mask(y, mask), tf.boolean_mask(y_, mask)), K.floatx())
 
-# STAGE 2's component of GCNfold (Mapping). --> predict base pairing probability matrix. 
+# STAGE 2's component of GraphRNAFold (Mapping). --> predict base pairing probability matrix. 
 def gcn_mapping(embed_model, conv1D_filters=64, conv2D_filters=64, activation='swish', 
                 act_after_dot=True, freeze_embed=True,):
     '''
