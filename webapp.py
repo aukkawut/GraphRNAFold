@@ -1,9 +1,9 @@
 import gradio as gr
 import tensorflow as tf
-from inference import GCNfold_prediction, GCNfold
+from inference import GraphRNAFold_prediction, GraphRNAFold
 
 def predictrna(rnaseq):
-    output =  GCNfold_prediction(rnaseq, GCNfold)
+    output =  GraphRNAFold_prediction(rnaseq, GraphRNAFold)
     return output
 
 interface = gr.Interface(
