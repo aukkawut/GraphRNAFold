@@ -39,9 +39,6 @@ python webapp.py
 ```
 This will print out the clickable link (default is [127.0.0.1:7860](http://127.0.0.1:7860)) so that you can test with any RNA sequence and will return a dot-bracket secondary structure.
 
-## Training
-
-To train the model, you need a training data. Here we only provided you with the validation set (`RNA_graph_data/VL0_data.pickle`) but you need to have the training set as denoted in the training file. The more detailed tutorial will be released.
 
 ## Known issue
 
