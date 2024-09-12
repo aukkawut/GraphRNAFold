@@ -1,7 +1,7 @@
 # GraphRNAFold
 ## How to install
 
-This tutorial is for Ubuntu system. Other systems are untested (you can use WSL on Windows and Mac should have similar installation process). 
+This tutorial is for **Linux** system. Other systems are untested (you can use WSL on Windows and Mac should have similar installation process). 
 
 You can install all the required (python) dependencies using
 ```
@@ -43,3 +43,7 @@ This will print out the clickable link (default is [127.0.0.1:7860](http://127.0
 
 To train the model, you need a training data. Here we only provided you with the validation set (`RNA_graph_data/VL0_data.pickle`) but you need to have the training set as denoted in the training file. The more detailed tutorial will be released.
 
+## Known issue
+
+- You cannot use `arnie.txt` with Windows directory because `arnie` use `:` as delimiter to separate variable and the value. To work around this, you need to create the environment variable `vienna_2_PATH=\path\to\vienna`.
+- If your system does not have GPU, `tensorflow` might print out some warnings. This is nothing to concern and can be safely ignored.
