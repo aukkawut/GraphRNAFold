@@ -7,7 +7,7 @@ You can install all the required (python) dependencies using
 ```
 pip install -r requirements.txt
 ```
-Then, you can install the ViennaRNA executable based on your system from [here](https://www.tbi.univie.ac.at/RNA/#download). We highly recommended you to install ViennaRNA from the source as it is more robust.
+Then, you can install the ViennaRNA executable based on your system from [here](https://www.tbi.univie.ac.at/RNA/#download). We highly recommended you to install ViennaRNA from the source as it is more robust. For MacOS, you might want to install from binary or consult their troubleshoot guide if something went wrong with the installation.
 
 Since one of the major part of this work is using `arnie` library [link](https://github.com/DasLab/arnie) as an overhead for the prior probability, we are required to add a text file that contains the path to ViennaRNA (default is `/usr/local/bin/` in Ubuntu) for example
 ```
